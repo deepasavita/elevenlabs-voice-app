@@ -1,4 +1,3 @@
-cat > vercel.json << 'EOL'
 {
   "version": 2,
   "builds": [
@@ -9,9 +8,12 @@ cat > vercel.json << 'EOL'
   ],
   "routes": [
     {
+      "src": "/api/(.*)",
+      "dest": "/pages/api/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
   ]
 }
-EOL

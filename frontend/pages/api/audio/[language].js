@@ -2,10 +2,10 @@
 export default async function handler(req, res) {
   const { language } = req.query;
   
-  // Mock audio URLs - same as your Flask backend
+  // Real speech audio samples - much better than beeps!
   const audioUrls = {
-    english: "https://www.soundjay.com/buttons/sounds/beep-07a.mp3",
-    arabic: "https://www.soundjay.com/buttons/sounds/beep-08b.mp3"
+    english: "https://assets.mixkit.co/sfx/preview/mixkit-man-announcing-something-1230.mp3",
+    arabic: "https://assets.mixkit.co/sfx/preview/mixkit-woman-announcing-something-1231.mp3"
   };
 
   try {
